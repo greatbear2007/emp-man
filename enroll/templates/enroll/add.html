@@ -1,0 +1,40 @@
+
+{% extends 'enroll/base.html' %}
+
+{% block mytitle %}
+<title>add file title!</title>
+{% endblock mytitle %}
+
+{% block content%}
+
+<div class="container p-5 bg-info">
+    <form action="" method = 'POST'> {% csrf_token %}
+        <label for=""> enter name : </label>
+        <input type="text" name="name" id="">
+        <br> <br>
+       
+        <label for=""> enter age : </label>
+        <input type="text" name="age" id="">
+        <br> <br>
+      
+        <label for=""> enter salary : </label>
+        <input type="text" name="salary" id="">
+        <br> <br>
+       
+        <label for=""> enter bonus : </label>
+        <input type="text" name="bonus" id="">
+        <br> <br>
+      
+        <label for=""> enter address : </label>
+        <input type="text" name="address" id="">
+        <br> <br>
+        <input type="submit" name="" id="">
+    </form>
+    
+</div>
+
+{% endblock content %}
+
+
+
+

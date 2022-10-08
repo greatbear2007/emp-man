@@ -1,0 +1,48 @@
+{% extends 'enroll/base.html' %}
+
+
+{% block content%}
+
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">name</th>
+                <th scope="col">age</th>
+                <th scope="col">salary</th>
+                <th scope="col">bonus</th>
+                <th scope="col">address</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            {% for emp in emps %}
+
+
+        <tr>
+            <th scope="row">{{emp.id}}</th>
+            <td>{{emp.name}}</td>
+            <td>{{emp.age}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.bonus}}</td>
+            <td>{{emp.address}}</td>
+
+        
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+
+
+
+{% endblock content %}
+   
+
+
+{% block mytitle %}
+<title>view file title!</title>
+{% endblock mytitle %}
+
+

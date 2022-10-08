@@ -1,0 +1,25 @@
+{% extends 'enroll/base.html' %}
+
+
+   
+{% block mytitle %}
+
+<title>filter file title !</title>
+
+
+{% endblock mytitle %}
+
+{% block content %}
+
+<div class="container m-5 alert alert-info">
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for=""> enter name: </label>
+        <input type="text" name="name" id=""> <br> </br>
+        <input type ="submit" value="submit">
+   
+    </form>
+</div>
+
+{% endblock content %}
+

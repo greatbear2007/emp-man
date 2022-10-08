@@ -1,0 +1,36 @@
+{% extends 'enroll/base.html' %}
+
+
+
+   
+{% block mytitle %}
+<title>remove file   title!</title>
+{% endblock mytitle %}
+
+
+
+
+
+{% block content%}
+
+
+<div class="container mt-5 text-center">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            {% for emp in emps %}
+          <a class="dropdown-item" href="#">{{emp.name}}</a>
+           {% endfor %}
+
+        </div>
+      </div>
+
+
+
+</div>
+  
+
+{% endblock content %}
+
