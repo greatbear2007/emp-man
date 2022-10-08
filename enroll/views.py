@@ -34,6 +34,7 @@ def remove(request):
 
 
 def filter(request):
+    '''thi=s  is fuilter ing the dayta '''
     if request.method == "POST":
         name = request.POST["name"]
         emps = Employee.objects.all()
